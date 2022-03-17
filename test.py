@@ -2,12 +2,12 @@ import requests
 
 BASE = "http://127.0.0.1:5000/"
 
-data = [{"name": "Jurubebinha", "views": 500, "likes": 15},
-        {"name": "Jujuba", "views": 1500, "likes": 30},
-        {"name": "Cremosinho", "views": 3000, "likes": 60},
-        {"name": "Mané pelado", "views": 5000, "likes": 120},
-        {"name": "Quentão", "views": 7000, "likes": 240},
-        {"name": "Tapioca", "views": 9000, "likes": 480}]
+data = [{"name": "Tutorial Python", "views": 500, "likes": 15},
+        {"name": "GTA V - Parte 1", "views": 1500, "likes": 30},
+        {"name": "Como usar linux", "views": 3000, "likes": 60},
+        {"name": "Teclado lindinho 2009", "views": 5000, "likes": 120},
+        {"name": "Como zerar dark souls com uma mao", "views": 7000, "likes": 240},
+        {"name": "Evidencias", "views": 9000, "likes": 480}]
 
 for i in range(len(data)):
     response = requests.post(BASE + "video/" + str(i), data[i])
